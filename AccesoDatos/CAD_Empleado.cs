@@ -5,10 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using MySql.Data.MySqlClient;
-
 namespace AccesoDatos
 {
-    public class CAD_Empleado:ConnectionToMySql
+    public class CAD_Empleado : ConnectionToMySql
     {
         MySqlDataReader? leer;
         DataTable tabla = new DataTable();
@@ -48,7 +47,7 @@ namespace AccesoDatos
                     command.Parameters.AddWithValue("@nomS", nomSuc);
                     command.Parameters.AddWithValue("@nomU", usu);
                     command.Parameters.AddWithValue("@nomPass", pass);
-               
+
                     command.CommandType = CommandType.Text;
                     command.ExecuteNonQuery();
                     command.Parameters.Clear();
@@ -100,5 +99,5 @@ namespace AccesoDatos
         }
 
     }
-   
+
 }

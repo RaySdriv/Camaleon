@@ -5,14 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using MySql.Data.MySqlClient;
-
 namespace AccesoDatos
 {
     public class CAD_Proveedor : ConnectionToMySql
     {
         MySqlDataReader? leer;
         DataTable tabla = new DataTable();
-
         public DataTable Mostrar()
         {
             //abrir conexion 

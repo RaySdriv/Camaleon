@@ -1,6 +1,6 @@
 ﻿namespace Presentacion
 {
-    partial class FormProveedor
+    partial class EmergentWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgv_proveedores = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_proveedores)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // dgv_proveedores
+            // label1
             // 
-            this.dgv_proveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_proveedores.Location = new System.Drawing.Point(115, 55);
-            this.dgv_proveedores.Name = "dgv_proveedores";
-            this.dgv_proveedores.RowTemplate.Height = 25;
-            this.dgv_proveedores.Size = new System.Drawing.Size(496, 249);
-            this.dgv_proveedores.TabIndex = 0;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(85, 87);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "HOLA";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // FormProveedor
+            // EmergentWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dgv_proveedores);
-            this.Name = "FormProveedor";
-            this.Text = "FormProveedor";
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_proveedores)).EndInit();
+            this.ClientSize = new System.Drawing.Size(250, 237);
+            this.Controls.Add(this.label1);
+            this.Name = "EmergentWindow";
+            this.Text = "EmergentWindow";
             this.ResumeLayout(false);
-            this.Load += new System.EventHandler(this.FormProveedor_Load);
+            this.PerformLayout();
+
         }
 
         #endregion
-       
-        private DataGridView dgv_proveedores;
+
+        private Label label1;
     }
 }
